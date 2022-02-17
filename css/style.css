@@ -6,11 +6,14 @@
     margin:0;
     padding:0; 
 }
-
+html{
+    font-size: 32px;
+}
 body {
     
     font-family: Arial,sans-serif;
     font-size: 15px;
+    background-color: rgba(255, 228, 196, 0.164);
     
 }
 h1,h2,h3,h4{color:#444;}
@@ -18,22 +21,22 @@ h1,h2,h3,h4{color:#444;}
 h1 {
     
     font-family: 'Crete Round',sans-serif;
-    font-size: 45px;
+    font: size 1.5rem;
     
     
     
 }
 h2{
-    font-size: 55px;
-    
+    /*font-size: 55px;*/
+    font-size:1.15rem;
     
     
 }
 h3 {
-    font-size:30px;
+    font: size 1rem;
 }
 h4 {
-    font-size: 25px;
+    font-size: 0.75rem;
     
 }
 
@@ -53,12 +56,17 @@ a { text-decoration: none;
 
 }
 
-.navbar li {font-weight: bold;}
+.navbar li {
+    font-weight: bolder;
+    font-size:0.5rem;
+
+}
 .orange{
     
     color: #FFA500;
     
 }
+
 
 /*styling the header section */ 
 
@@ -68,7 +76,13 @@ a { text-decoration: none;
 display:flex;
 flex-direction: column;
 align-items: center;
+margin-bottom: 30px;
 
+}
+
+.headerWrapper h1 {
+    
+    margin-bottom: 30px;
 }
 
 .navbar{
@@ -80,11 +94,51 @@ align-items: center;
 }
 .navbar li {
     margin-bottom: 10px;
+    font-size: 0.55rem;
 
     
 }
+.MainImageWrapper {
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 60vh;
+    background: url('/images/main.jpg') no-repeat center ;
 
 
+}
+
+.MainImageWrapper h2 {
+    font-weight: normal;/*enlever le gras du H2 par defaut*/
+
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+   
+    font-style: normal;
+    
+}
+.button_1 {
+
+background-color:#FFA500;
+padding-top: 10px;
+height: 8%;
+width:20%;
+text-align: center;
+color: white;
+border-radius: 20%;
+font-size: 0.5rem;
+font-weight: bold;
+
+}
+
+
+.button_1:hover{
+
+color:#777;
+}
 
 /*Media QUERIES*/
 
@@ -105,12 +159,19 @@ align-items: center;
     
     }
     .navbar li {
-
+        
         padding:20px;
         text-transform: uppercase;
     
        /* border: 2px solid black;*/
        
+    }
+
+    .button_1 {
+
+        height: 10%;
+       width:10%;
+       font-size: 0.75rem;
     }
     
 
@@ -144,6 +205,13 @@ align-items: center;
     
        /* border: 2px solid black;*/
        
+    }
+
+    .button_1 {
+
+        height: 10%;
+       width:10%;
+       font-size: 0.75rem;
     }
     
 }
