@@ -22,14 +22,14 @@ h1,h2,h3,h4{color:#444;}
 h1 {
     
     font-family: 'Crete Round',sans-serif;
-    font: size 1.5rem;
+    font: size 2rem;
     
     
     
 }
 h2{
     /*font-size: 55px;*/
-    font-size:1.15rem;
+    font-size:1.5rem;
     
     
 }
@@ -115,7 +115,7 @@ margin-top: 30px;
 }
 
 .MainImageWrapper h2 {
-    font-weight: normal;/*enlever le gras du H2 par defaut*/
+    /*font-weight: normal;/*enlever le gras du H2 par defaut*/
 
     margin-top: 10vh;
     margin-bottom: 15vh;
@@ -126,14 +126,15 @@ margin-top: 30px;
 .button_1 {
 
 background-color:#FFA500;
-padding-top: 10px;
-height: 8%;
-width:20%;
+width: max-content;
+height: max-content;
 text-align: center;
 color: white;
-border-radius: 40%;
+border-radius: 10%;
 font-size: 0.5rem;
 font-weight: bold;
+height:5vh;
+
 
 }
 
@@ -170,7 +171,7 @@ margin-bottom: 10px;
     display: flex;
      flex-direction: column;
      align-items: center;
-     justify-content: space-around;
+    justify-content: space-around;
     
     text-align: center;
     background-color: rgba(255,255,255,0.95);
@@ -238,7 +239,7 @@ margin-bottom: 10px;
 }
 
 
-
+/*styling the footer*/
 
 
 /*Media QUERIES*/
@@ -358,7 +359,6 @@ margin-bottom: 10px;
         .overlay{
             width:50%;
             height: 100%;
-
             background-color: rgba(255,255,255,0.95);
         
            
