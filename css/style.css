@@ -246,7 +246,10 @@ margin-bottom: 10px;
 }
 
 .button3 {
-
+    color:#fff;
+    background-color: #FFA500;
+    border: 2px solid #fff;
+    border-radius: 5px;
     padding:15px;
 
 }
